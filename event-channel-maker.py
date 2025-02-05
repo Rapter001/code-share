@@ -1,3 +1,12 @@
+import discord
+import json
+import asyncio
+import os
+import pytz
+from dotenv import load_dotenv
+from discord.ext import commands, tasks
+from datetime import datetime, timezone, timedelta
+
 print(r"""
  ____              __
 / __ \____ _____  / /____  _____
@@ -9,15 +18,6 @@ print(r"""
 
 Email me for support: support@rapter.is-a.dev
 """)
-
-import discord
-import json
-import asyncio
-import os
-import pytz
-from dotenv import load_dotenv
-from discord.ext import commands, tasks
-from datetime import datetime, timezone, timedelta
 
 intents = discord.Intents.default()
 intents.guilds = True
